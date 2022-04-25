@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 100%;
+  width: 100%;
+  background: url("https://www.clara.es/medio/2019/11/18/consultorio-nutricion-frutos-secos_b197c075_1280x772.jpg") #3e547c;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  //   Menu
+  nav {
+    background-color: rgba(255, 255, 255, 0.719);
+    height: 65px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .logo {
+      width: 90px;
+      margin: 3px 10px;
+      z-index: 90;
+    }
+    .checkbtn {
+      display: none;
+    }
+    #check {
+      display: none;
+    }
+    ul {
+      float: right;
+      margin-right: 20px;
+      li {
+        display: inline-block;
+        line-height: 65px;
+        margin: 0px 5px;
+        a {
+          color: rgb(0, 0, 0);
+          font-size: 1.2em;
+          // text-transform: uppercase;
+          padding: 0px 10px;
+          text-decoration: none;
+          list-style: none;
+        }
+        a:hover {
+          background: rgba(0, 0, 0, 0.794);
+          transition: 0.5s;
+          border-radius: 8%;
+          font-size: 1.16em;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+  //   FIN MENU
+
+  // HOME CARROUSEL
+  .carousel {
+    top: -9px;
+  }
+  .sectionResponsive {
+    display: none;
+  }
+  // FIN HOME CARROUSEL
+  // PRODUCTOS
+  .container__productos {
+    width: 100%;
+    max-width: 1200px;
+    // height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+    .card {
+      width: 330px;
+      height: 430px;
+      border-radius: 8px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      margin: 20px;
+      text-align: center;
+      transition: all 0.25s;
+      img {
+        width: 330px;
+        height: 220px;
+      }
+    }
+    .card:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
+  }
+  // FIN DE PRODUCTOS
+
+
+
+
+
+  // CONTACTO
+  .contacto {
+    form {
+      width: 35%;
+      height: 86%;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.418);
+      padding: 4px 20px;
+      margin-top: 10px;
+      border-radius: 5%;
+      .contactoTitulo {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      #select {
+        font-size: 1em;
+      }
+      .provincia {
+        background-color: white;
+        color: rgb(0, 0, 0);
+        font-size: 1em;
+        padding: 2px;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7;
+        font-size: 17px;
+        #boton {
+          background: black;
+          color: blanchedalmond;
+          padding: 20px;
+        }
+        #boton:hover {
+          cursor: pointer;
+        }
+      }
+      textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7;
+        font-size: 17px;
+        min-height: 300px;
+        max-height: 700px;
+      }
+    }
+  }
+  // FIN CONTACTO
+
+
+// STOCKS
+  .stocksProductoTerminado{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .h5__{
+      background-color: rgba(255, 255, 255, 0.719);
+      font-size: 1.5em;
+      margin: auto;
+      text-align: center;
+      width: 100%;
+    }
+    
+
+    .cont1{
+      background-color: rgba(255, 255, 255, 0.719);
+      height: auto;
+      width: 100%;
+      // border: solid 1px;
+      display: flex;
+      flex-direction: row;
+      padding: 1px;
+      border:none;
+      img{
+        width: 40%;
+        height: auto;
+        border-radius: 8%;
+      }
+      .cont1__div {
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+        text-align: center;
+        margin: auto;
+        h5{
+          font-size: 1.2em;
+          margin: auto;
+          text-align: center;
+        }
+        input{
+          font-size: 1.2em;
+          width: 100px;
+          margin: auto;
+
+        }
+
+      }
+      
+      
+    }
+    
+  }
+  // FIN DE STOCKS
+
+  /* FOOTER */
+  .footer {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.856);
+    // position: absolute;
+    // bottom: 0;
+    .grupo-2 {
+      background-color: rgb(214, 207, 204);
+      padding: 5px;
+      text-align: center;
+    }
+    .grupo-1 {
+      width: 100%;
+      padding: 40px;
+      gap: 50px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 35%;
+        }
+      }
+      .box {
+        h1 {
+          color: black;
+          margin-bottom: 25px;
+          font-size: 1.4em;
+          font-weight: bolder;
+        }
+        h3 {
+          color: black;
+          margin-bottom: 25px;
+          font-size: 1.2em;
+          font-weight: bolder;
+        }
+        a {
+          color: rgb(0, 0, 0);
+          margin-bottom: 5px;
+          display: block;
+          font-size: 0.8em;
+          text-decoration: none;
+        }
+        a:hover {
+          color: rgb(24, 24, 128);
+          font-size: 0.85em;
+          transition: 1s;
+        }
+        .redes {
+          
+          a {
+            
+            display: inline-block;
+            text-decoration: none;
+            width: 5em;
+            height: 5em;
+            // line-height: 55px;
+            color: rgb(255, 255, 255);
+            margin-right: 20px;
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            transition: all 300ms ease;
+            // font-size: 1.1em;
+            padding: 25px;
+          }
+          a:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  /*FIN FOOTER */
+}
+// RESPONSIVE DESIGN
+@media (max-width: 580px) {
+  body {
+    .stocksProductoTerminado{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .cont1{
+        background-color: rgba(255, 255, 255, 0.719);
+        height: auto;
+        width: 100%;
+        // border: solid 1px;
+        display: flex;
+        flex-direction: row;
+        padding: 1px;
+        border:none;
+        img{
+          width: 40%;
+          height: auto;
+          border-radius: 8%;
+        }
+        .cont1__div {
+          display: flex;
+          flex-direction: column;
+          padding: 3px;
+          text-align: center;
+          margin: auto;
+          h5{
+            font-size: 1.2em;
+            margin: auto;
+            text-align: center;
+          }
+          input{
+            font-size: 1.2em;
+            width: 100px;
+            margin: auto;
+
+          }
+
+        }
+        
+        
+      }
+      
+    }
+    main {
+      .container__productos{
+        .card{
+          width: 100%;
+          margin: 5px;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      // HOME CARROUSEL
+      .sectionPc {
+        display: none;
+      }
+      .sectionResponsive {
+        display: block;
+      }
+      // FIN HOME CARROUSEL
+    }
+    // MENU RESPONSIVE
+    nav {
+      .checkbtn {
+        display: block;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        float: right;
+        line-height: 80px;
+        margin-top: -5px;
+        margin-right: 20px;
+      }
+      #check:checked ~ ul {
+        right: -20px;
+      }
+      ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.719);
+        top: 80px;
+        right: -120%;
+        text-align: center;
+        transition: all 0.5s;
+        top: 65px;
+        li {
+          display: block;
+          margin: 50px;
+          line-height: 20px;
+          a {
+            font-size: 20px;
+          }
+          a:hover {
+            background: none;
+            color: #0082e6;
+          }
+        }
+      }
+    }
+    // FIN DE MENU RESPONSIVE
+
+
+
+    // CONTACTO RESPONSIVE
+    .contacto {
+      form {
+        width: 100%;
+      }
+    }
+    // FIN CONTACTO RESPONSIVE
+
+
+
+    // FOOTER RESPONSIVE
+    .footer {
+      width: 100%;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+
+      .grupo-1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+
+        .box {
+          justify-content: center;
+          align-items: center;
+          .redes {
+            
+            a {
+              
+              margin: auto;
+              width: 3em;
+              height: 3em;
+              // line-height: 55px;
+              color: rgb(255, 255, 255);
+              // margin-right: 20px;
+              align-items: center;
+              text-align: center;
+              
+              // font-size: 1.1em;
+              padding: 18px;
+            }
+          }
+          h3,h1 {
+            text-align: center;
+          }
+          a {
+            justify-content: space-between;
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: block;
+            color: black;
+            font-size: 1.1em;
+          }
+        }
+        figure {
+          /*LOGO*/
+          display: none;
+          width: 100%;
+          height: 100%;
+          margin: auto;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            margin: auto;
+            width: 60%;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+    // FIN FOOTER RESPONSIVE
+  }
+}

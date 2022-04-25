@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css"> <!-- CSS -->
+    <link rel="icon" href="./recursos/LogoWilka.ico"> <!-- icon -->
+    <!-- fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- fuentes de Google -->
+</head>
+<body>
+    <!--*BARRA DE NAVEGACION-->
+    <nav>
+        <input type="checkbox" id="check">
+        <label class="checkbtn" for="check">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img class="logo" src="./recursos/LogoWilka.png">
+        <ul>
+            <li><a class="active" href="./index.html">Home</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./mayoristas.html">Mayoristas</a></li>
+            <li><a href="./micuenta.html">Mi cuenta</a></li>
+        </ul>
+    </nav>
+    <!--FIN BARRA DE NAVEGACION-->
+    <!-- LISTA -->
+    <main class="stocksProductoTerminado">
+        <h5 class="h5__">Stocks de Producto Terminado</h5>
+        <div class="cont1">
+            <img src="./recursos/barrafrutosrojos.jpeg" alt="">
+            <div class="cont1__div div1">
+                <h5></h5><br>
+                <input id="c" type="number" name="Nombre" placeholder="123...">
+                <button type="button" onclick="capturar()">Modif </button>
+            </div>
+        </div>
+        <div class="cont1">
+            <img src="./recursos/barrafrutosrojos.jpeg" alt="">
+            <div class="cont1__div div2 ">
+                <input id="d" type="number" name="Nombre" placeholder="123...">
+                <button type="button" onclick="capturar2()">Modif </button>
+            </div>
+        </div>
+        <div class="cont1">
+            <img src="./recursos/barrafrutosrojos.jpeg" alt="">
+            <div class="cont1__div div3">
+                <input id="e" type="number" name="Nombre" placeholder="123...">
+                <button type="button" onclick="capturar3()">Modif </button>
+            </div>
+        </div>
+    </main><br><br>
+    <!-- FIN LISTA -->
+    <script src="https://kit.fontawesome.com/eabde53d9c.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
